@@ -1,0 +1,1 @@
+Aqui temos duas páginas em html. A primeira fornece um link para a segunda página, que por sua vez possui o formulário em si. Esta página com o formulário, conta com um botão que alterna entre o temas "Claro" e "Escuro". Esta funcionalidade foi dada por meio do código JavaScript.

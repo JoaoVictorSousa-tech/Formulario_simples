@@ -1,0 +1,136 @@
+:root{
+    --black1: #201B2C;
+    --black2: #2F2841;
+    --purple: #514869;
+    --green1: #77FFC0;
+    --green2: #00FF88;
+    --white: #F0FFFFDE;
+    --grey: #B4A7D6;
+}
+body{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.esquerda{
+    width: 50vw;
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.esquerda > h1{
+    color: var(--fontColor);
+    font-size: 3vw;
+}
+.direita{
+    width: 50vw;
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grupo{
+    margin: 0;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:30px 35px;
+    background-color: var(--bgForm);
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+.grupo > div > h1{
+    color: var(--green2);
+    font-weight: 800;
+    margin: 0;
+}
+.campo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+.campo > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: var(--purple);
+    color: var(--white);
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+.campo > label{
+    color: var(--formFontColor);
+    margin-bottom: 10px;
+}
+.campo > input::placeholder{
+    color: #F0FFFF94;
+}
+.botao{
+    width: 87%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2B134B;
+    background: var(--green2);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00FF8052;
+    box-sizing: border-box;
+}
+.botao:hover{
+    background: #00FF00;
+}
+.btn{
+    position: fixed;
+    z-index: 999;
+    top: 20px;
+    right: 90%;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    cursor: pointer;
+    box-shadow: 2px 2px 2px rgb(0,0,0,0.2);
+}
+.btn:hover{
+    background-color: var(--btnBgHover);
+}
+.light-theme{
+    --bg: var(--grey);
+    --bgForm: var(--white);
+    --formFontColor: var(--black2);
+    --fontColor: var(--purple);
+    --btnBg: var(--black1);
+    --btnBgHover: #7A378B;
+    --btnFontColor: var(--green2);
+}
+.dark-theme{
+    --bg: var(--black1);
+    --bgForm: var(--black2);
+    --formFontColor: var(--white);
+    --fontColor: var(--green1);
+    --btnBg: var(--grey);
+    --btnBgHover: #8B008B;
+    --btnFontColor: #008B8B;
+}
